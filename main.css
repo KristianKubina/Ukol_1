@@ -1,0 +1,214 @@
+.image {
+  width: 80%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.main_page {
+  width: 400px;
+  height: fit-content;
+  border: 3px solid black;
+  background-color: lightgrey;
+}
+
+.text {
+  margin-left: 50px;
+  color: cornflowerblue;
+}
+
+.return {
+  margin-left: 30px;
+}
+
+.nadpis {
+  font-size: 120%;
+  margin-left: 40px;
+  text-decoration: underline;
+}
+
+.long_text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*buttons*/
+.buttonBorder {
+  background-color: rgb(16, 16, 219);
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 145px;
+  color: white;
+}
+
+.buttonGradients {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 145px;
+  color: white;
+}
+
+.buttonShadows {
+  background-color: rgb(16, 16, 219);
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 145px;
+  color: white;
+  box-shadow: 2px 2px 2px 2px red;
+}
+
+.button2DTransformation {
+  background-color: darkgreen;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 145px;
+  color: white;
+  transition: 2s;
+}
+
+.button3DTransformation {
+  background-color: darkgreen;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 145px;
+  color: white;
+  transition: 2s;
+}
+
+.button3DTransformation:hover {
+  transform: rotateY(180deg);
+}
+
+.button2DTransformation:hover {
+  transform: rotate(180deg);
+}
+
+.buttonTransitions {
+  background-color: darkred;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 145px;
+  color: white;
+  transition: linear 2s;
+}
+.buttonTransitions:hover {
+  transition-delay: 1s;
+  background-color: darkviolet;
+  width: 200px;
+  font-size: 200%;
+  height: 100px;
+  background-color: darkblue;
+}
+
+/*square*/
+.square {
+  width: 100px;
+  height: 100px;
+  margin-left: 145px;
+  background-color: red;
+  border: 3px black solid;
+  position: relative;
+  animation-name: animated;
+  animation-duration: 4s;
+}
+
+@keyframes animated {
+  0% {
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: orange;
+    left: 150px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 150px;
+    top: -150px;
+  }
+  75% {
+    background-color: green;
+    left: -145px;
+    top: -150px;
+  }
+  90% {
+    background-color: purple;
+    left: -145px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.columns {
+  margin-left: 20px;
+  margin-right: 20px;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 2px;
+  column-rule-color: rgb(0, 0, 0);
+}
+
+.firstBox {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 350px;
+  height: 130px;
+  border: 2px solid rgb(255, 115, 0);
+}
+
+.secondBox {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 350px;
+  height: 130px;
+  padding: 20px;
+  border: 5px solid purple;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkblue;
+}
+
+.flexContainer > div {
+  background-color: darkred;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
